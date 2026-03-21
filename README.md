@@ -1,6 +1,8 @@
 # apple-magic-trackpad-battery-percent-python
 Python script  to show the Magic Trackpad battery percentage on Waybar
 
+![Waybar Magic Trackpad Demo](demo.png)
+
 Since the hid_magicmouse driver often fails to report battery levels to upower when connected via Bluetooth, this script uses ioctl to query the hardware directly (using the 0x90 report ID)
 
 Requirements:
