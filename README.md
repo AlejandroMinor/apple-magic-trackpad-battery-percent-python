@@ -5,8 +5,10 @@ Python script  to show the Magic Trackpad battery percentage on Waybar
 
 Since the hid_magicmouse driver often fails to report battery levels to upower when connected via Bluetooth, this script uses ioctl to query the hardware directly (using the 0x90 report ID)
 
+**Note:** In some cases, when the Apple Magic Trackpad is charging directly on the same device, the connection type changes from Bluetooth to USB. Therefore, the script uses an alternative path to obtain battery information in these situations.
+
 Requirements:
-- Python 3
+- Python 3.7 or higher
 - Nerd Fonts (for icons, or change them to whatever you want)
 
 1. Set Permissions (udev rule)
